@@ -1,12 +1,27 @@
 # QR Generator
 
-Python script that generates a QR code from a URL and saves the image locally.
+Simple web application to generate QR codes from a URL using FastAPI.
 
-## Usage
+## Requirements:
+- Python 3.10+
+- pip
 
-```bash
-pip install qrcode[pil]
-python main.py
-```
+## Create and activate virtual environment (Windows):
+    python -m venv .venv
+    .venv\\Scripts\\activate
 
-Enter the URL and file name when prompted. The QR is saved in the `QRs` folder and opens automatically.
+## Install dependencies:
+    pip install -r requirements.txt
+
+## Run the application:
+    uvicorn main:app --reload
+
+## Open in browser:
+    http://127.0.0.1:8000
+
+Usage:
+1. Enter a URL
+2. Enter a file name
+3. Generate the QR code
+
+The QR image is saved as a PNG file.
